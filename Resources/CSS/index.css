@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	font-family:Arial;
+	text-align:center
+}
+
+/* header section */
+
+h1 {
+	font-size:24px;
+	text-align:center;
+}
+
+h2 {
+	font-size:20px;
+	text-align:center;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 20px 20px 20px 20px;
+	overflow: hidden;
+}
+
+li {
+    float: center;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li a {
+	display: block;
+	text-align: center;
+	padding: 8px;
+	background-color: #FFFFFF;
+	text-decoration: none;
+}
+
+img {
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+}
+
+.homelink
+{
+	color:black;
+	text-decoration: none;
+	background-color: none;
+}
+
+.aboutlink
+{
+	color:black;
+	text-decoration: none;
+	background-color: none;
+}
+
+a {
+	text-decoration:none;
+	text-decoration-color: black
+}
+
+#contact
+{
+	color:black;
+	text-decoration: none;
+	background-color: none;
+}
+
+
+<style>
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+</style>
+
+<div class="footer">
+	<p>Footer</p>
+</div>
