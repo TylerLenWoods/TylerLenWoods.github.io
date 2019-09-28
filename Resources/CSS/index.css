@@ -1,20 +1,20 @@
 @charset "UTF-8";
 /* CSS Document */
 * {
-	font-family:Arial;
-	text-align:center
+	font-family: "berkshire-swash", inder, "Arial Hebrew";
+	text-align: center
 }
 
 /* header section */
 
 h1 {
-	font-size:24px;
-	text-align:center;
+	font-size: 24px;
+	text-align: center;
 }
 
 h2 {
-	font-size:20px;
-	text-align:center;
+	font-size: 12px;
+	text-align: center;
 }
 
 ul {
@@ -38,51 +38,81 @@ li a {
 	text-decoration: none;
 }
 
+.img-with-text {
+    text-align: center;
+    width: [width of img];
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
 img {
 	padding-top: 50px;
-	padding-right: 30px;
+	padding-right: 50px;
 	padding-bottom: 50px;
-	padding-left: 30px;
+	padding-left: 50px;
 }
 
-.homelink
+.nav-link
 {
-	color:black;
+	color: #000000;
 	text-decoration: none;
 	background-color: none;
 }
 
-.aboutlink
-{
-	color:black;
-	text-decoration: none;
-	background-color: none;
-}
 
 a {
 	text-decoration:none;
-	text-decoration-color: black
+	text-decoration-color:black
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: #FFB51C;
+}
+
+a:active {
+  color: #2AAE23;
 }
 
 #contact
 {
-	color:black;
+	color: #828282;
 	text-decoration: none;
 	background-color: none;
 }
-
-
-<style>
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
+/* Sticky Footer Styles */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Footer height plus 20px (for actual margin) */
+    margin-bottom: 15px;
+	position: relative;
 }
 
-</style>
 
-<div class="footer">
-	<p>Footer</p>
-</div>
+
+.footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    min-height: 54px;
+    font-size:.9rem;
+    line-height: 1.5rem;
+    color: #737272;
+	text-decoration-color: #706E6E;
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+
+a {
+	text-decoration:none;
+	text-decoration-color:black
+}
