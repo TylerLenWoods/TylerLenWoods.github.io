@@ -1,9 +1,73 @@
 @charset "UTF-8";
 /* CSS Document */
 * {
-	font-family: "berkshire-swash", inder, "Arial Hebrew";
-	text-align: center
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'
 }
+
+/* Style the header with a color background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #FABC60;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #FABC60;
+    color: black;
+}
+.header a {
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #3a9679;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Image logo and title Tyler Len Woods in one line */
+.header-left {
+	float: left;
+	display: -webkit-flex; /* Safari */
+	-webkit-align-items: center; /* Safari 7.0+ */
+	display: flex;
+	align-items: center;
+}
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
 
 body {
   background: #ffffff;
@@ -14,89 +78,8 @@ body {
   font: inherit;
   vertical-align: baseline;
 }
-.container {
-  position: relative;
-  margin: 0 auto;
-  width: 94%;
-  max-width: 1100px;
-  font-family: helvetica, sans-serif;
-}
 
-.container img {
-	float: left;
-}
 
-#header {
-  z-index: 2;
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  background: #fabc60;
-  color: white;
-}
-#header h1 {
-  position: relative;
-  padding-right: 65px;
-  top: 0px;
-  margin: 0px;
-  text-transform: uppercase;
-  font-size: 1.2em;
-}
-#nav {
-  position: absolute;
-  right: 0;
-  top: -15px;
-  height: 60px;
-}
-#nav ul li {
-  float: left;
-  list-style: none;
-}
-#nav ul li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-@media (max-width: 850px) {
-  #header .container {
-    width: 100%;
-  }
-  #header h1 {
-    padding-left: 3%;
-  }
-  #nav {
-    width: 100%;
-    top: 60px;
-  }
-  #nav:before {
-    content: '\2630';
-    display: block;
-    position: absolute;
-    right: 3%;
-    top: -50px;
-    line-height: 40px;
-    font-size: 1.4em;
-    cursor: pointer;
-  }
-  #nav ul {
-    background: #222;
-    width: 100%;
-    margin: 0px;
-	text-align: center;
-  }
-  #nav ul li {
-	display: inline;
-	float: none;
-  }
-  #nav ul li a {
-    padding: 10px 3% ;
-    line-height: 20px;
-    border-top: 1px solid #333;
-  }
-}
 
 main {
 	padding-top: 100px;
