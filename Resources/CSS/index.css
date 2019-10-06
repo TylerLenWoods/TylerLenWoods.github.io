@@ -144,43 +144,6 @@ h1 {
   }
 }
 
-
-/**
-
-.img-with-text {
-    text-align: center;
-}
-
-.img-with-text img {
-    display: inline-block;
-    margin: 0 auto;
-	padding-top: 50px;
-	padding-right: 50px;
-	padding-bottom: 50px;
-	padding-left: 50px;
-}
-
-
-
-a {
-	text-decoration:none;
-	text-decoration-color:black
-}
-
-a:link {
-  color: black;
-}
-
-a:hover {
-  color: #FFB51C;
-}
-
-a:active {
-  color: #2AAE23;
-}
-
-**/
-
 #contact
 {
 	color: #828282;
