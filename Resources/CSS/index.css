@@ -4,6 +4,10 @@
 	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'
 }
 
+html body {
+	height: 100%;
+}
+
 /* Style the header with a color background and some padding */
 .header {
     overflow: hidden;
@@ -52,7 +56,7 @@
 	display: -webkit-flex; /* Safari */
 	-webkit-align-items: center; /* Safari 7.0+ */
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 }
 
 
@@ -68,30 +72,87 @@
   }
 }
 
-
 body {
-  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   border: 0;
+  font-family: Arial;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
-
-
+/* Center website */
 main {
 	padding-top: 100px;
+	flex: 1 0 auto; 
+	max-width: 1000px;
+	margin: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/**
 
 .img-with-text {
     text-align: center;
 }
 
 .img-with-text img {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
 	padding-top: 50px;
 	padding-right: 50px;
@@ -118,12 +179,17 @@ a:active {
   color: #2AAE23;
 }
 
+**/
+
 #contact
 {
 	color: #828282;
 	text-decoration: none;
 	background-color: none;
 }
+
+
+
 /* Sticky Footer Styles */
 html {
     position: relative;
@@ -138,8 +204,8 @@ body {
 
 
 footer{
-	position: fixed;
 	bottom: 0;
+	flex-shrink: 0;
 }
 .footer-distributed{
 	background-color: #3a9679;
