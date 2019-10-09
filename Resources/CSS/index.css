@@ -74,6 +74,8 @@ html body {
   }
 }
 
+}
+
 #menu ul {
   margin: 0;
   padding: 0;
@@ -82,6 +84,7 @@ html body {
 #menu .main-menu {
   display: none;
   text-decoration: none;
+  background-color: #e16262;
 }
 
 #tm:checked + .main-menu {
@@ -153,7 +156,7 @@ html body {
 }
 
 #menu .sub-menu a:hover {
-  color: #444;
+  color: #11144c;
 }
 
 #toggle-menu .drop-icon, 
@@ -239,7 +242,6 @@ html body {
     display: block;
   }
 }
-The menu is ready now!
 
 body {
   display: flex;
