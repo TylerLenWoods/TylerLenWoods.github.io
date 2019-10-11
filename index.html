@@ -8,51 +8,51 @@
 	<meta description="Tyler Len Woods Illustrator and Graphic Designer"
 	<meta keywords="Tyler, Len, Woods, illustrator, illustration, graphic, design, designer, artist, portfolio">
 	<meta name="author" content="Tyler Len Woods">
-	<link rel="stylesheet"
-		  type="text/css"
-		  href="Resources/CSS/index.css"
-		  media="screen">
-	<link href="Resources/Images/Favicons/favicon.ico" rel="icon" type="image/x-icon" />
- 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 	<link rel="stylesheet" type="text/css" href="Resources/CSS/index.css">
 	
 </head>
 	
 <body>
 	
 <header>
-	<div class="header">
-		<div class="header-left">
-			<img src="Resources/Images/MyBusinessCardPics/BusinessLogoCircle.png"
-			 	 alt="logo"
-			 	 style="width:60px;height:60px;">
-		</div>
-		
-		<div class="header-right">
-   			<p>Tyler Len Woods | Illustrator &amp; Graphic Designer</p>
-		</div>
-	</div>
-</header>
 	
-<nav id="menu">
-  <label for="tm" id="toggle-menu">MENU <span class="drop-icon">▾</span></label>
-  <input type="checkbox" id="tm">
-  <ul class="main-menu clearfix">
-    <li><a href="index.html">About</a></li>
-    <li><a href="#">Portfolio 
-        <span class="drop-icon">▾</span>
-        <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
-      </a>
-      <input type="checkbox" id="sm1">
-      <ul class="sub-menu">
-        <li><a href="#">Grandfather Clock</a></li>
-		<li><a href="#">Glenwood &amp; Gomorrah</a></li>
-        <li><a href="#">Catch Me If You Can</a></li>
-		<li><a href="#">Tyler's Business Card</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fabc44b">
+  		
+		<a class="navbar-brand" href="index.html">Tyler Len Woods</a>
+  		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+  		
+		<div class="collapse navbar-collapse" id="navbarNav">
+    		<ul class="navbar-nav">
+      			<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio
+       				</a>
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          					<a class="dropdown-item" href="#">Grandfather Clock</a>
+          					<a class="dropdown-item" href="#">Glenwood &amp; Gomorrah</a>
+          					<a class="dropdown-item" href="#">Catch Me If You Can</a>
+							<a class="dropdown-item" href="#">Tyler's Business Card</a>
+        				</div>
+      			</li>
+      			
+				<li class="nav-item">
+        			<a class="nav-link" href="#">About</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#">Contact</a>
+      			</li>
+    		</ul>
+  		</div>
+	</nav>
+	
+	<div class="top-header">
+		<p>ILLUSTRATOR | GRAPHIC DESIGNER</p>
+	</div>
+	
+</header>
 
 	
 <main>
@@ -88,6 +88,7 @@
     </div>
   </div>
 </div>
+	
 
 <!-- END MAIN -->
 	
@@ -120,14 +121,19 @@
  
 	<div class="footer-right">
 		<p class="footer-company-about"> <span>What I offer</span></p>
-		<p class="footer-company-about">Digital &amp; Traditional Illustration 
+		<p class="footer-company-about">Digital &amp; Traditional Illustration</p>
 		<p class="footer-company-about">Graphic &amp; Web Design</p>
 	</div>	
-			
+	
  
 </footer>
 	
 	
-
-  </body>
+	
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+	</body>
 </html>
