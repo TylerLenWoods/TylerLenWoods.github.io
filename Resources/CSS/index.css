@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
-*{$font-family-sans-serif:
+*{
+	$font-family-sans-serif:
   /* Safari for macOS and iOS (San Francisco) */
   -apple-system,
   /* Chrome < 56 for macOS (San Francisco) */
@@ -48,14 +49,45 @@
 	border: none;
 }
 
-.footer .card-body {
-	background-color: #3A9679
+.container-fluid .mt-4 {
+	background-color: #EBEBEB;
 }
 
-.footer .card-footer {
+.footer {
 	background-color: #3A9679;
 }
 
+
+.list-group-item {
+	background-color: #fabc60;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+	.row .footer {margin-top: 0px}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.row .footer {margin-top: 0px}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.row .footer {margin-top: 0px}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.row .footer {margin-top: 0px}
+} 
+
+
 .copyright {
 	padding-top: 10px;
-}
+	}
+
