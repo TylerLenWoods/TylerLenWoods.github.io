@@ -16,253 +16,46 @@
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 }
 
-html body {
-	height: 100%;
-}
 
-.top-header {
-	background-color: #e16262;
-	align-content: center;
-	padding-left: 17px;
-	font-size: 14px;
-	color: white;
-}
+/* Color theme references:
+	Yellow: #FABC60
+	Red: #E16262
+	Green: #3A9679
+	Blue: #11144C
+*/
+
 
 .navbar {
-	background-color: #fac16b;
+	background-color: #FABC60;
+	z-index: 99999;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #f1f1f1;
-  margin: 0;
-  padding: 20px;
-  border: 0;
-  font-family: Arial;
-  font-size: 100%;
-  vertical-align: baseline;
+#logo {
+    max-height: 200%;
+    z-index: 100000;
 }
 
-/* Center website */
-main {
-	padding-top: 100px;
-	flex: 1 0 auto; 
-	max-width: 1000px;
-	margin: auto;
+@media only screen and (max-width:980px) {
+	#logo {margin-top: 0px}
 }
 
-* {
-  box-sizing: border-box;
+.navbar-nav {
+	padding-left: 100px;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
+.dropdown-menu {
+	background-color: #FABC60;
+	border: none;
 }
 
-.row {
-  margin: 8px -16px;
+.footer .card-body {
+	background-color: #3A9679
 }
 
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
+.footer .card-footer {
+	background-color: #3A9679;
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-#contact
-{
-	color: #828282;
-	text-decoration: none;
-	background-color: none;
-}
-
-
-
-/* Sticky Footer Styles */
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    /* Footer height plus 20px (for actual margin) */
-    margin-bottom: 15px;
-	position: relative;
-}
-
-
-
-footer{
-	bottom: 0;
-	flex-shrink: 0;
-}
-.footer-distributed{
-	background-color: #3a9679;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
- 
-	padding: 55px 50px;
-	margin-top: 40px;
-}
- 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
- 
-.footer-distributed .footer-left{
-	width: 40%;
-}
- 
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px;
-	margin: 0;
-}
- 
-.footer-distributed h3 span{
-	color:  #5383d3;
-}
- 
- 
-.footer-distributed .footer-links{
-    color: #ffffff;
-    margin-top: 8px;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 12px;
-    padding: 0;
-}
- 
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
- 
-.footer-distributed .footer-company-name{
-    color: #8f9296;
-    font-size: 14px;
-    font-weight: normal;
-    margin-top: -7px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-}
- 
- 
-.footer-distributed .footer-center{
-    width: 35%;
-}
- 
-.footer-distributed .footer-center {
-    line-height: 0;
-    color: #ffffff;
-    vertical-align: middle;
-    font-size: 13px;
-    font-weight: normal;
-    margin-bottom: 0px;
-}
- 
-.footer-distributed .footer-center p span{
-    display: block;
-    font-weight: bold;
-    font-size: 14px;
-}
- 
-.footer-distributed .footer-center p a{
-	color:  #e16262;
-	text-decoration: none;;
-}
-
-
-.footer-distributed .footer-right{
-	width: 20%;
-}
- 
-.footer-distributed .footer-company-about{
-    line-height: 2;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: normal;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-}
- 
-.footer-distributed .footer-company-about span{
-    display: block;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-}
-
- 
- 
-@media (max-width: 880px) {
- 
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	
-	}
- 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
- 
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-	.main {
-		line-height: normal;
-		font-size: auto;
-	}
- 
-	
+.copyright {
+	padding-top: 10px;
 }
