@@ -25,6 +25,15 @@
 	Blue: #11144C
 */
 
+.social-link {
+	color: #3A9679;
+}
+
+.social-link:hover {
+	color: #E16262;
+}
+
+
 .page-link {
 	color: black;
 
