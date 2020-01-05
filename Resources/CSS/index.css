@@ -25,12 +25,36 @@
 	Blue: #11144C
 */
 
+.call-link {
+	color: white;
+}
+
+.call-link:hover {
+	color: #FABC60;
+}
+
+.email-link {
+	color: white;
+}
+
+.email-link:hover {
+	color: #FABC60;
+}
+
 .social-link {
 	color: #3A9679;
 }
 
 .social-link:hover {
 	color: #E16262;
+}
+
+.social-link-footer {
+	color: white;
+}
+
+.social-link-footer:hover {
+	color: #FABC60;
 }
 
 
