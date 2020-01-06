@@ -42,11 +42,11 @@
 }
 
 .social-link {
-	color: #3A9679;
+	color: grey;
 }
 
 .social-link:hover {
-	color: #E16262;
+	color: #3a9679;
 }
 
 .social-link-footer {
